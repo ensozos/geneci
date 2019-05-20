@@ -16,8 +16,8 @@ public class CILauncher {
             System.out.println("\nNo src folder and language provided.\n    ");
             System.out.println("\tUsage: geneci <srcFolderPath> <language>");
         } else {
-            String inputDirectory = "C:\\Users\\zosimadis\\IdeaProjects\\matrix-profile\\src";
-            String language = "java";
+            String inputDirectory = args[0];
+            String language = args[1];
 
             DirectoryReader directoryReader = new DirectoryReader(inputDirectory, language);
             List<String> files = directoryReader.traverseFromRootDir();
