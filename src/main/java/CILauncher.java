@@ -12,7 +12,7 @@ public class CILauncher {
      *             name of the language.
      */
     public static void main(String[] args) {
-        if (args.length > 2) {
+        if (args.length < 2) {
             System.out.println("\nNo src folder and language provided.\n    ");
             System.out.println("\tUsage: geneci <srcFolderPath> <language>");
         } else {

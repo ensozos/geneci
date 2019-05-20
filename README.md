@@ -4,8 +4,9 @@
    <img src="images/geneci_logo.png" width="300" alt="geneci_logo">
 </p>
 
+[![Build Status](https://travis-ci.org/ensozos/geneci.svg?branch=master)](https://travis-ci.org/ensozos/geneci)
 ![GitHub](https://img.shields.io/github/license/ensozos/geneci.svg)
-![GitHub issues](https://img.shields.io/github/issues-raw/ensozos/Matrix-Profile.svg)
+![GitHub issues](https://img.shields.io/github/issues-raw/ensozos/geneci.svg)
 
 GeneCI allows developers to generate class information for object oriented programming languages. It uses
 [Antlr](https://github.com/antlr/antlr4) to generate lexers parsers and tree parsers for grammar specification of your language.
@@ -20,7 +21,7 @@ UML or Call Graph tools, GeneCI is free, open source and you can use it with any
 Dowload 'geneci-tool.jar' from github releases. Start with 'java' command:
 
 ```bash
-wget https://github.com/ensozos/geneci/releases/download/v0.0.1/geneci-tool.jar
+wget https://github.com/ensozos/geneci/releases/tag/v0.0.1-alpha
 java -jar geneci-tool.jar <your-src-folder> <language>
 ```
 
@@ -50,13 +51,13 @@ called Bar. In this example there are no methods or attributes in the class.
 
 ###### Methods
 
-Lets see an entity with one simple method in it. The class of our example has a single method with name getDistance (which is not a constructor) with no parameters, and
+Lets see an entity with one simple method in it (we are going to present only the method value of the entity). The class of our example has a single method with name getDistance (which is not a constructor) with no parameters, and
 returns a Double. Also this method calls other methods like singlePad and compute.
 
 ```json
 [
   {
-      ...
+     
       "Methods": [
             {
               "Name": "getDistance",
@@ -81,7 +82,7 @@ The attributes of the class in the format presented below. More precisely we hav
 ```json
 [
   {
-      ...
+     
       "Attributes": [ {
                              "Name": "threshold",
                              "Visibility": "private",
@@ -120,4 +121,4 @@ programming language described here:
 
 ## License
 
-Distributed under the x license. See LICENSE for more information.
+Distributed under the GPL-3 license. See LICENSE for more information.
